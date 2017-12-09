@@ -1,0 +1,11 @@
+function parse_template () {
+    for (var i in data) {
+        if ( data.hasOwnProperty(i)){
+            if (data[i] === null) {
+                data[i] = '';
+            }
+            template = template.replace(new RegExp('{{' + i + '}}', 'g'), data[i]);
+        }
+    }
+    return template;
+}
