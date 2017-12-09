@@ -9,3 +9,5 @@ array = {}; <br>
 array.variable = 'ein'; <br>
 
 html = parse_template (array); <br>
+
+# ergebnis =  Ich bin ein Text
