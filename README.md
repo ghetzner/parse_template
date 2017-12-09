@@ -1,13 +1,13 @@
 # parse_template
 Template parser
 
-Ersetzt {{tags}} durch array.tags <br>
+Ersetzt {{tags}} durch data.tags <br>
 
 template = 'Ich bin {{variable}} Text'; <br>
 
-array = {}; <br>
-array.variable = 'ein'; <br>
+data = {}; <br>
+data.variable = 'ein'; <br>
 
-html = parse_template (array); <br>
+html = parse_template (template, data); <br>
 
-// ergebnis =  Ich bin ein Text
+// html =  Ich bin ein Text
