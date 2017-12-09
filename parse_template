@@ -1,4 +1,4 @@
-function parse_template () {
+function parse_template (template, data) {
     for (var i in data) {
         if ( data.hasOwnProperty(i)){
             if (data[i] === null) {
